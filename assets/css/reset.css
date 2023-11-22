@@ -1,0 +1,53 @@
+/* link */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* reset */
+* {
+  box-sizing: border-box;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'roboto', 'Noto Sans KR', sans-serif;
+}
+h1, h2, h3, h4, h5, h6,
+div, header, footer, main, section, aside, nav, article,
+p, a, ul, ol, li, span, em, strong, q, blockquote,
+s, del, sup, sub, form, input, fieldset, legend,
+select, option, button, address, table, thead,
+tbody, tfoot, tr, th, td, img, video, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+}
+table, tr, td, th {
+  border-collapse: collapse;
+  text-align: left;
+}
+fieldset, input {
+  border: 0;
+}
+ul, ol, li {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+  background: none;
+  border: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* header */
+
+/* part1 */
+
+/* part2 */
+
+/* part3 */
+
+/* footer */

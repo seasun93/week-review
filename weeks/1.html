@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1주차ㅣ| 복습발표</title>
+  <link rel="stylesheet" href="../assets/css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="../assets/css/page.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../assets/js/page.js"></script>
+</head>
+<body>
+  <div id="root">
+    <header>
+      <h1><a href="/">프로그래머스 복습발표</a></h1>
+    </header>
+    <div class="container cli">
+      <div class="inner">
+        <h2 onclick="tabTitle()">CLI 명령어</h2>
+        <article class="part1">
+          <!-- cli 명령어 -->
+          <div class="title">본격적으로 배우기 앞서 우리가 익혀야 할 개념이 있습니다.</div>
+          <div class="content notion-1">
+            <p class="one-cont">GUI</p>
+            <p class="one-cont">CLI</p>
+          </div>
+          <div class="content notion-2">
+            <img src="../assets/img/GUI.png" alt="gui">
+          </div>
+          <div class="content notion-3">
+            <img src="../assets/img/CLI.png" alt="cli">
+          </div>
+          <div class="content notion-4">
+            CLI 명령어로는<br>
+            폴더간 이동을 하는 cd<br>
+            폴더를 생성하는 mkdir<br>
+            폴더의 파일과 폴더를 확인 하는 ls
+            <p class="five-cont">그리고 우리가 많이 사용 할 <span class="c-red">git</span>이 있습니다.</p>
+          </div>
+          <button type="button" id="btn-one" class="btn-one" onclick="onButtonOne('part1')">1</button>
+          <button type="button" id="btn-two" class="btn-two" onclick="onButtonTwo('part1')">2</button>
+          <button type="button" id="btn-third" class="btn-third" onclick="onButtonThird('part1')">3</button>
+          <button type="button" id="btn-4th" class="btn-4th" onclick="onButton4th('part1')">4</button>
+        </article>
+      </div>
+    </div>
+    <div class="container git-github">
+      <div class="inner">
+        <h2 onclick="tabTitle()">깃과 깃허브</h2>
+        <article class="part2">
+          <!--  깃과 깃허브 -->
+          <div class="title">프로젝트 관리</div>
+          <div class="content notion-1">
+            <p>우리가 프로젝트를 진행하는데 있어서 꼭 필요한게 있는데 바로 <span class="c-red">Git</span>과<span class="c-red">Github</span>이다. </p>
+            <p>우리가 깃과 깃허브를 사용하는 이유는</p>
+            <p>첫번째로 <span class="c-red">버전관리</span>가 가능하다.</p>
+            <p>두번째로는 다른사람들과 <span class="c-red">협업</span>이 가능하다.</p>
+          </div>
+          <div class="content notion-2">
+            <p>git은 내 컴퓨터에서 버전관리를 도와주는 시스템이고</p>
+            <p>github는 내 컴퓨터와 별도로 서버에서 백업과 함께 버전관리를 해주는 시스템이다.</p>
+            <p class="two-action">
+              이렇게 데이터들을 버전관리만 하는데 어떻게 협업을 할 수 있지?
+            </p>
+            <p>github에 저장을 해놓으면 다른 컴퓨터에서도 내가 작업한 프로젝트들을 가져갈 수 있기 때문에 협업이 가능해 지는것이다.</p>
+          </div>
+          <div class="content notion-3">
+            <img class="big-img" src="../assets/img/git-to-github.gif" alt="깃과 깃허브의 관계">
+          </div>
+          <button type="button" id="btn-2-one" class="btn-one" onclick="onButtonOne('part2')">1</button>
+          <button type="button" id="btn-2-two" class="btn-two" onclick="onButtonTwo('part2')">2</button>
+          <button type="button" id="btn-2-third" class="btn-third" onclick="onButtonThird('part2')">3</button>       
+        </article>
+      </div>
+    </div>
+    <div class="container use-git">
+      <div class="inner">
+        <h2 onclick="tabTitle()">깃 사용하기</h2>
+        <article class="part3">
+          <!-- 깃 사용하기 -->
+          <div class="title">자주 사용하는 깃 명령어</div>
+          <div class="content notion-1">
+            <p><span>git init</span></p>
+            <p>git init은 컴퓨터에 설치된 깃에게 "나 이제 이 폴더 깃 사용할거야"라고 지정을 하는 명령어이다.</p>
+            <p><span>git status</span></p>
+            <p>깃의 상태에 대해 알려주는 명령어로 어떤 브랜치에 있는지, 커밋된건 있는지, 상태관리중인 파일/폴더가 있는지를 확인 할 수 있다.</p>
+            <p><span>git add</span></p>
+            <p>깃이 관리하는 영역(스테이지)에 추가해 달라는 명령어</p>
+            <p><span>git commit</span></p>
+            <p>commit은 지금까지 add된 파일과 폴더들을 하나로 묶어 하나의 버전을 만드는 명령어로 <br>이렇게 커밋을 할때에는 필수적으로 메세지를 적어줘야하는데 보통 어떤것을 작업했는지를 적어준다.</p>
+            <p><span>git log</span></p>
+            <p>log는 commit된 히스토리들을 확인하는 명령어로 commit 히스토리를 시간순서대로 보여준다.</p>
+          </div>
+          <div class="content notion-2">
+            <p><span>git push</span></p>
+            <p>git push는 원격저장소에 넣어주는 명령어이다.</p>
+            <p><span>git pull</span></p>
+            <p>git pull은 push와 반대로 원격저장소에서 내 컴퓨터로 데이터를 가져오는 명령어이다.</p>
+            <p><span>git remote</span></p>
+            <p>git push와 git pull을 사용하기 위해서는 git remote를 통해서 내 컴퓨터와 원격컴퓨터를 연결을 해야한다. 만약 하지 않으면 push도 pull도 불가능하다.</p>
+            <p><span>git clone</span></p>
+            <p>다른사람이 작업한 프로젝트를 내 컴퓨터로 복제할 때 사용하는 명령어로 (clone으로 가져올 때는 repository를 폴더로 가져오기 때문에 remote된 위치를 잘 확인을 해야한다.)</p>
+            <p><span>git branch</span></p>
+            <p>브랜치는 메인프로젝트를 건드리지 않고 독립적으로 개발을 할 수 있게 도와주는 명령어로 내가 원하는 시점에 복제를 해서 독자적으로 작업이 가능한게 가장 큰 장점이다.</p>
+          </div>
+          <div class="content notion-3">
+            <img src="../assets/img/git-route.png" alt="깃 사용 순서">
+          </div>
+          <button type="button" id="btn-3-one" class="btn-one" onclick="onButtonOne('part3')">1</button>
+          <button type="button" id="btn-3-two" class="btn-two" onclick="onButtonTwo('part3')">2</button>
+          <button type="button" id="btn-3-third" class="btn-third" onclick="onButtonThird('part3')">3</button>
+        </article>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

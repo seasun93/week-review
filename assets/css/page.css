@@ -1,0 +1,130 @@
+#root {
+  background: #f1f1f1;
+  width: 100%;
+  min-height: 100vh;
+}
+.container {
+  padding: 20px 0;
+
+}
+.container .inner {
+  width: 1280px;
+  min-height:  100%;
+  margin:0 auto;
+  background: #fff;
+  border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.container .inner h2 {
+  text-align: center;
+  font-size:24px;
+  padding: 20px 0;
+  background: #333365;
+  color:#fff;
+}
+.container .inner article {
+  padding: 20px;
+  min-height: 60vh;
+  position: relative;
+  display: none;
+}
+.container .inner article.on {
+  display: block;
+}
+.container .inner article .title {
+  font-size:1.4rem;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+.container .inner article .one-cont {
+  position: absolute;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border: 5px solid #333365;
+  border-radius: 50%;
+  top:30%;
+  left: 50%;
+  font-weight: bold;
+}
+.container .inner article .content {
+  display: none;
+  line-height: 1.4;
+  font-size:1.2rem
+}
+.container .inner article .content p {
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.2px;
+}
+.container .inner article .content p span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.container .inner article .content img {
+  display: block;
+  width: 45%;
+  margin: 30px auto 0;
+}
+.container .inner article .one-cont:first-child {
+  transform: translateX(-300px);
+}
+.container .inner article .one-cont:last-child {
+  transform: translateX(100px);
+}
+.container .inner article .content .five-cont {
+  font-size:2rem;
+  font-weight: bold;
+}
+.container .inner article .content .five-cont span {
+  font-weight: bold;
+}
+
+.container .inner button {
+  position: absolute;
+  bottom: 20px;
+  border: 1px solid #333;
+  border-radius: 3px;
+  padding:2px 5px;
+  cursor: pointer;
+  z-index: 1;
+}
+.container .inner button.btn-one {
+  left: 60px;
+  background: #333365;
+  color: #fff;
+}
+.container .inner button.btn-two {
+  left: 90px;
+}
+.container .inner button.btn-third {
+  left: 120px;
+}
+.container .inner button.btn-4th {
+  left: 150px;
+}
+.container .inner button.btn-5th {
+  left: 180px;
+}
+.container .inner button.btn-6th {
+  left: 210px;
+}
+.container .inner button.btn-7th {
+  left: 240px;
+}
+.container .inner button.btn-8th {
+  left: 270px;
+}
+.container .inner button.btn-9th {
+  left: 300px;
+}
+
+
+
+/* 공통 css */
+.c-red {color:rgb(199, 18, 18)}
+.big-img {width: 60% !important;}

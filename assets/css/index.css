@@ -1,0 +1,20 @@
+#root {
+  background: #f1f1f1;
+  width: 100%;
+  min-height: 100vh;
+}
+.container {
+  padding: 20px 0;
+}
+.container .inner {
+  width: 1280px;
+  min-height:  100%;
+  margin:0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+.container .inner nav {
+  display: flex wrap;
+}
+.container .inner nav a {}
