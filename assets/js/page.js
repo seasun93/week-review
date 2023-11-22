@@ -3,16 +3,30 @@ window.addEventListener('load',()=>{
   for(let i = 0; i<content.length; i++){
     content[i].style.display='block';
   }
+
+  const tab1 = document.querySelector('.cli h2');
+  const tab2 = document.querySelector('.git-github h2');
+  const tab3 = document.querySelector('.use-git h2');
+  tab1.addEventListener('click',function(){
+    tab1.nextElementSibling.classList.toggle('on')
+  })
+  tab2.addEventListener('click',function(){
+    tab2.nextElementSibling.classList.toggle('on')
+  })
+  tab3.addEventListener('click',function(){
+    tab3.nextElementSibling.classList.toggle('on')
+  })
 })
 
-function tabTitle(){
-  const tab = document.querySelectorAll('.container h2');
-  tab.forEach((el)=>{
-    el.addEventListener('click',()=>{
-      el.nextElementSibling.classList.toggle('on')
-    })
-  })
-}
+// function tabTitle(){
+//   const tab = document.querySelectorAll('.container h2');
+//   tab.forEach((el)=>{
+//     el.addEventListener('click',()=>{
+//       console.log('1')
+//       el.nextElementSibling.classList.toggle('on')
+//     })
+//   })
+// }
 
 function onButtonOne(part){
   switch(part){
