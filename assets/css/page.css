@@ -24,7 +24,7 @@
   color:#fff;
 }
 .container .inner article {
-  padding: 20px;
+  padding: 20px 20px 60px 20px;
   min-height: 60vh;
   position: relative;
   display: none;
@@ -38,24 +38,22 @@
   font-weight: normal;
   margin-bottom: 2rem;
 }
-.container .inner article .one-cont {
-  position: absolute;
-  font-size: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 200px;
-  border: 5px solid #333365;
-  border-radius: 50%;
-  top:30%;
-  left: 50%;
-  font-weight: bold;
-}
 .container .inner article .content {
   display: none;
   line-height: 1.4;
   font-size:1.2rem
+}
+.container .inner article .content h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+.container .inner article .content .info {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  padding: 10px;
+  border-radius: 5px;
+  border:1px solid #333
 }
 .container .inner article .content p {
   margin-bottom: 0.8rem;
@@ -70,20 +68,24 @@
   width: 45%;
   margin: 30px auto 0;
 }
-.container .inner article .one-cont:first-child {
-  transform: translateX(-300px);
+.container .inner article .content table {
+  display: flex; flex-flow: column;
 }
-.container .inner article .one-cont:last-child {
-  transform: translateX(100px);
+.container .inner article .content table tr {
+  display: flex;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;;
 }
-.container .inner article .content .five-cont {
-  font-size:2rem;
-  font-weight: bold;
+.container .inner article .content table tr:first-child {
+  border-top: 1px solid #ccc;
+  border-bottom: 5px solid #ccc;
 }
-.container .inner article .content .five-cont span {
-  font-weight: bold;
+.container .inner article .content table tr > *:first-child {
+  flex: 3;
 }
-
+.container .inner article .content table tr > *:last-child {
+  flex:7
+}
 .container .inner button {
   position: absolute;
   bottom: 20px;
@@ -124,7 +126,58 @@
 }
 
 
+/* week 1 */
+.cli .inner article .one-cont {
+  position: absolute;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border: 5px solid #333365;
+  border-radius: 50%;
+  top:30%;
+  left: 50%;
+  font-weight: bold;
+}
+.cli .inner article .one-cont:first-child {
+  transform: translateX(-300px);
+}
+.cli .inner article .one-cont:last-child {
+  transform: translateX(100px);
+}
+.cli .inner article .content .five-cont {
+  font-size:2rem;
+  font-weight: bold;
+}
+.cli .inner article .content .five-cont span {
+  font-weight: bold;
+}
+
 
 /* 공통 css */
 .c-red {color:rgb(199, 18, 18)}
+.fwb {font-weight: bold;}
 .big-img {width: 60% !important;}
+.col {
+  display: flex;
+}
+.col-2 > * {
+  width: 50%;
+  padding: 10px;
+}
+.col-3 > * {
+  width: 33%;
+  padding: 10px;
+}
+.col h3 {text-align: center;}
+code {
+  background: #444;
+  color:#fff;
+  border-radius: 3px;
+  padding:3px 5px;
+}
+.container .inner article .col img {
+  width: 100%;
+}
