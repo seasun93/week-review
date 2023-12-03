@@ -5,12 +5,11 @@
 }
 .container {
   padding: 20px 0;
-
 }
 .container .inner {
   width: 1280px;
-  min-height:  100%;
-  margin:0 auto;
+  min-height: 100%;
+  margin: 0 auto;
   background: #fff;
   border-radius: 5px;
   border-radius: 5px;
@@ -18,10 +17,10 @@
 }
 .container .inner h2 {
   text-align: center;
-  font-size:24px;
+  font-size: 24px;
   padding: 20px 0;
   background: #333365;
-  color:#fff;
+  color: #fff;
 }
 .container .inner article {
   padding: 20px 20px 60px 20px;
@@ -33,7 +32,7 @@
   display: block;
 }
 .container .inner article .title {
-  font-size:1.4rem;
+  font-size: 1.4rem;
   text-align: center;
   font-weight: normal;
   margin-bottom: 2rem;
@@ -41,7 +40,7 @@
 .container .inner article .content {
   display: none;
   line-height: 1.4;
-  font-size:1.2rem
+  font-size: 1.2rem;
 }
 .container .inner article .content h3 {
   font-weight: bold;
@@ -53,7 +52,7 @@
   line-height: 1.8;
   padding: 10px;
   border-radius: 5px;
-  border:1px solid #333
+  border: 1px solid #333;
 }
 .container .inner article .content p {
   margin-bottom: 0.8rem;
@@ -68,30 +67,31 @@
   width: 45%;
   margin: 30px auto 0;
 }
-.container .inner article .content table {
-  display: flex; flex-flow: column;
+.container.frontend .inner article .content table {
+  display: flex;
+  flex-flow: column;
 }
-.container .inner article .content table tr {
+.container.frontend .inner article .content table tr {
   display: flex;
   padding: 15px;
-  border-bottom: 1px solid #ccc;;
+  border-bottom: 1px solid #ccc;
 }
-.container .inner article .content table tr:first-child {
+.container.frontend .inner article .content table tr:first-child {
   border-top: 1px solid #ccc;
   border-bottom: 5px solid #ccc;
 }
-.container .inner article .content table tr > *:first-child {
+.container.frontend .inner article .content table tr > *:first-child {
   flex: 3;
 }
-.container .inner article .content table tr > *:last-child {
-  flex:7
+.container.frontend .inner article .content table tr > *:last-child {
+  flex: 7;
 }
 .container .inner button {
   position: absolute;
   bottom: 20px;
   border: 1px solid #333;
   border-radius: 3px;
-  padding:2px 5px;
+  padding: 2px 5px;
   cursor: pointer;
   z-index: 1;
 }
@@ -125,7 +125,6 @@
   left: 300px;
 }
 
-
 /* week 1 */
 .cli .inner article .one-cont {
   position: absolute;
@@ -137,7 +136,7 @@
   height: 200px;
   border: 5px solid #333365;
   border-radius: 50%;
-  top:30%;
+  top: 30%;
   left: 50%;
   font-weight: bold;
 }
@@ -148,20 +147,100 @@
   transform: translateX(100px);
 }
 .cli .inner article .content .five-cont {
-  font-size:2rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 .cli .inner article .content .five-cont span {
   font-weight: bold;
 }
 
+/* week3 par2 */
+.modeling .notion-4 {
+  position: relative;
+}
+.modeling .click-hide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: #fff;
+}
 
 /* 공통 css */
-.c-red {color:rgb(199, 18, 18)}
-.fwb {font-weight: bold;}
-.big-img {width: 60% !important;}
+.hide {
+  display: none;
+}
+code {
+  background: #444;
+  color: #fff;
+  border-radius: 3px;
+  padding: 3px 5px;
+}
+
+/* 배경 색 */
+.bg-f1f1f1 {
+  background: #f1f1f1;
+}
+
+/* 글씨 색 */
+.c-red {
+  color: rgb(199, 18, 18);
+}
+
+/* 글씨 디자인 */
+.ta-c {
+  text-align: center;
+}
+.fwb {
+  font-weight: bold;
+}
+
+/* 여백 */
+.mg-none {
+  margin: unset !important;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.pd-5 {
+  padding: 5px;
+}
+.pd-10 {
+  padding: 10px;
+}
+.bd1black {
+  border: 1px solid #000;
+}
+
+/* 이미지 */
+.big-img {
+  width: 60% !important;
+}
+.container .inner article .col img {
+  width: 100%;
+}
+
+/* 레이아웃 */
 .col {
   display: flex;
+}
+.col-between {
+  justify-content: space-between;
+}
+.flow-col {
+  flex-flow: column;
+}
+.col-wrap {
+  flex-wrap: wrap;
+}
+.col-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  display: block;
 }
 .col-2 > * {
   width: 50%;
@@ -171,13 +250,21 @@
   width: 33%;
   padding: 10px;
 }
-.col h3 {text-align: center;}
-code {
-  background: #444;
-  color:#fff;
-  border-radius: 3px;
-  padding:3px 5px;
+.col h3 {
+  text-align: center;
 }
-.container .inner article .col img {
-  width: 100%;
+.minh-180 {
+  min-height: 180px;
+}
+.w-100 {
+  width: 100% !important;
+}
+.w-49 {
+  width: 49% !important;
+}
+.w-33 {
+  width: 33% !important;
+}
+.w-15 {
+  width: 15% !important;
 }

@@ -1,20 +1,63 @@
 /* link */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* reset */
 * {
   box-sizing: border-box;
 }
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
-  font-family: 'roboto', 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
-h1, h2, h3, h4, h5, h6,
-div, header, footer, main, section, aside, nav, article,
-p, a, ul, ol, li, span, em, strong, q, blockquote,
-s, del, sup, sub, form, input, fieldset, legend,
-select, option, button, address, table, thead,
-tbody, tfoot, tr, th, td, img, video, dl, dt, dd {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+header,
+footer,
+main,
+section,
+aside,
+nav,
+article,
+p,
+a,
+ul,
+ol,
+li,
+span,
+em,
+strong,
+q,
+blockquote,
+s,
+del,
+sup,
+sub,
+form,
+input,
+fieldset,
+legend,
+select,
+option,
+button,
+address,
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td,
+img,
+video,
+dl,
+dt,
+dd {
   margin: 0;
   padding: 0;
   line-height: 1.2;
@@ -22,14 +65,20 @@ tbody, tfoot, tr, th, td, img, video, dl, dt, dd {
   font-style: normal;
   font-weight: normal;
 }
-table, tr, td, th {
+table,
+tr,
+td,
+th {
   border-collapse: collapse;
   text-align: left;
 }
-fieldset, input {
+fieldset,
+input {
   border: 0;
 }
-ul, ol, li {
+ul,
+ol,
+li {
   list-style: none;
 }
 button {
@@ -42,7 +91,9 @@ a {
   color: #000;
 }
 pre {
+  font-family: "Noto Sans KR", sans-serif;
   text-wrap: wrap;
+  margin: unset;
 }
 /* header */
 
