@@ -86,6 +86,25 @@ function arrTitle(week, part) {
         "N:M 관계의 해소",
         "ERD 관계의 표현"
       ]
+    },
+    week4: {
+      part1: [
+        "라이브러리란?",
+        "프레임워크란?",
+        "라이브러리와 프레임워크 종류",
+        "제어의 역전"
+      ],
+      part2: [
+        "배열의 구조 분해 할당",
+        "객체의 구조 분해 할당",
+        "spread 연산자",
+        "spread 연산자를 이용하여 데이터 추가하기"
+      ],
+      part3: [
+        "Map 객체의 시작",
+        "Map 속성과 메서드 part1",
+        "Map 속성과 메서드 part2"
+      ]
     }
   };
 
@@ -93,12 +112,11 @@ function arrTitle(week, part) {
 }
 
 function onButtonOne(week, part) {
-  const firstTitle = document.querySelector(".container-1 .title");
-  const firstContent = document.querySelector(".container-1 .notion-1");
-  const firstBtn = document.querySelector(".part1 .btn-one");
-  const arrSecTitle = ["GUI와 CLI가 무엇인가?", "깃플로우"];
   switch (part) {
     case "part1":
+      const firstTitle = document.querySelector(".container-1 .title");
+      const firstContent = document.querySelector(".container-1 .notion-1");
+      const firstBtn = document.querySelector(".part1 .btn-one");
       resetContent(part);
       resetColor(part);
       console.log(arrTitle(week, part)[0]);

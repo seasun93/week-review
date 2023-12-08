@@ -194,6 +194,13 @@ code {
 .fwb {
   font-weight: bold;
 }
+/* 테이블 디자인 */
+.bb1 {
+  border-bottom: 1px solid #333365;
+}
+.bd1black {
+  border: 1px solid #000;
+}
 
 /* 여백 */
 .mg-none {
@@ -211,10 +218,9 @@ code {
 .pd-10 {
   padding: 10px;
 }
-.bd1black {
-  border: 1px solid #000;
+.child-pd-10 tr > * {
+  padding: 10px;
 }
-
 /* 이미지 */
 .big-img {
   width: 60% !important;
