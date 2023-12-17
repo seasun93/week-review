@@ -105,6 +105,14 @@ function arrTitle(week, part) {
         "Map 속성과 메서드 part1",
         "Map 속성과 메서드 part2"
       ]
+    },
+    week5: {
+      part1: ["epxress의 router", "router의 사용방법", "router의 경로"],
+      part2: ["예외처리를 왜 해야하는가?", "프론트엔드를 위한 예외처리"],
+      part3: [
+        "처음부터 리팩토링을 해야하는가?",
+        "if중첩문을 푸는 방법 early return"
+      ]
     }
   };
 
